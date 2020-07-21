@@ -1,0 +1,166 @@
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    width: 30%;
+    height: 90%;
+    border-top: 10px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    /* border: 1px solid gray; */
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.cardContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+.card{
+    background-color: rgb(212, 212, 212);
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    justify-content: center; 
+}
+.firstRow{
+    
+    text-align: center;
+    padding-bottom: 10px;
+}
+.secondRow{
+    text-align: center;
+    padding-bottom: 10px;
+}
+#messageText{
+    height: 50px;
+    width: 75%;
+}
+.sendMsg{
+    width: 63%;
+    text-align: center;
+}
+.messageList{
+    display: flex;
+    padding-left: 20px;
+}
+
+#password{
+    width: 50%;
+    justify-content: flex-end;
+    display: flex;
+    padding-right: 20px;
+}
+
+.recent{
+    font-size: 12px;
+    width: 180px;
+    margin-right: 10px;
+}
+#btnAllConv{
+    width: 110px;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.messageContent{
+    background-color:whitesmoke;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 42vh;
+}
+
+#viewConve{
+    display: flex;
+    justify-content: flex-end;
+    height: 8vh;
+    align-items: center;
+    font-size: 18px;
+}
+
+#newTextMsg{
+    width: 70%;
+    padding: 10px;
+}
+
+#btnsendMsg{
+    padding: 10px;
+    background-color: lightgray;
+    border: 1px solid gray;
+    font-size: 12px;
+    width: 110px;
+    margin-left: 10px;
+}
+
+a{
+    color: black;
+}
+
+.laterMsg{
+    display: flex;
+    justify-content: center;
+    height: 9vh;
+    align-items: center;
+}
+
+.loadMessage{
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    align-items: center;
+}
+
+.btnLoad{
+    width: 50%;
+    display: flex;
+    height: 10vh;
+    background-color: lightgray;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: black;
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 7vh;
+    align-items: center;
+}
+
+#toText{
+    width: 200px;
+    padding: 5px;
+}
+
+#phone{
+    font-size: small;
+    font-style: italic;
+    color: gray;
+    font-weight: 500;
+}
+
+.btnSend{
+    height: 35px;
+    background: gray;
+    color: black;
+    border: none;
+}
+
+#loadBtn{
+    border: none;
+    background: grey;
+}

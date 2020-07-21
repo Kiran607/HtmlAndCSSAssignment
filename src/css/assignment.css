@@ -1,0 +1,322 @@
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.content{
+    height: 89%;
+    width: 30%;
+    border: 1px solid;
+    border-top: 10px solid;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid grey;
+    
+}
+body{
+    margin: 0;
+}
+.firstRow{
+display: flex;
+padding-left: 20px;
+padding-right: 20px;
+justify-content: space-between;
+}
+#firstBox{
+width: 200px;
+
+height: 50px;
+background-color: pink;
+}
+#secondBox{
+width: 100px;
+
+height: 50px;
+background-color: pink;
+}
+
+.secondRow{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    height: 10%;
+}
+
+#thirdBox{
+    width: 200px;
+    height: 50px;
+    background-color: pink;
+}
+
+#fourthBox{
+    width: 70px;
+    height: 20px;
+    background-color: pink;
+}
+
+.thridRow{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    height: 30%;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: pink;
+}
+
+#fifthBox{
+    width: 100px;
+    height: 20px;
+    background-color: gray;
+}
+#sixthBox{
+width: 200px;
+height: 40px;
+background-color: gray
+}
+#seventhBox{
+    width: 150px;
+    height: 20px;
+    background-color: gray;
+}
+.subFirstRow{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 22%;
+    align-items: center;
+}
+
+.subFSecondRow{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+#eighthBox{
+    width: 376px;
+    height: 60px;
+    background-color: gray;
+}
+
+#ninethBox{
+    width: 250px;
+    height: 20px;
+    background-color: gray;
+}
+
+.fourthRow{
+    display: flex;
+    justify-content: space-evenly;
+    height: 15%;
+    align-items: center;
+}
+
+.subThridRow{
+    display: flex;
+    /* justify-content: space-evenly; */
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+#tenthBox{
+    height: 40px;
+    width: 130px;
+    background-color: gray;
+    margin-right: 20px;
+}
+#eleventhBox{
+    width: 100px;
+    height: 30px;
+    background-color: gray;
+}
+
+.fifthRow{
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.subFifthRow{
+display: flex;
+}
+#twelvethBox{
+    border: 1px solid;
+    width: 100px;
+    height: 25px;
+    background: pink;
+    
+}
+#thriteenBox{
+    border: 1px solid;
+    width: 100px;
+    height: 25px;
+    margin-left: 20px;
+    background: pink;
+}
+#fourtethBox{
+    border: 1px solid;
+    width: 100px;
+    height: 25px;
+    margin-left: 20px;
+    background: pink;
+}
+#fifteenBox{
+    background-color: grey;
+    width: 80px;
+    height: 20px;
+    margin-left: 20px;
+}
+
+.sixthRow{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.seventhRow{
+    padding-left:20px;
+    padding-right: 20px;
+    background-color: pink;
+    height: 43vh;
+    border-top: 1px solid gray;
+    background: pink;
+    overflow: hidden;
+}
+
+.seventhFirstRow{
+display: flex;
+justify-content: space-between;
+height: 13%;
+align-items: center;
+}
+
+#sixteenBox{
+    width:100px;
+    height: 30px;
+    background-color: grey;
+}
+#seventeenBox{
+    width:100px;
+    height: 30px;
+    background-color: grey;
+}
+#eighteenBox{
+    width: 50px;
+    height: 15px;
+    background-color: grey;
+}
+.seventhThRow{
+    display: flex;
+    height: 13%;
+    align-items: center;
+}
+#nineteenBox{
+    flex: 1;
+    background-color: grey;
+    height: 30px;
+    align-items: center;
+}
+#twentyBox{
+    width: 70px;
+    background-color: grey;
+    height: 30px;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#twentyOneBox{
+    width: 270px;
+    background-color: grey;
+    height: 20px; 
+}
+.seventhFiveRow{
+    display: flex;
+    height: 13%;
+    align-items: center;
+}
+#twentyTwoBox{
+    width: 100%;
+    background-color: grey;
+    height: 30px; 
+}
+#twentyThreeBox{
+    width: 50px;
+    height: 15px;
+    background-color: grey;
+}
+#twentyFourBox{
+    flex: 0.85;
+    background-color: grey;
+    height: 30px;
+    align-items: center;
+}
+.seventhSevenRow{
+    display: flex;
+    height: 15%;
+    align-items: center;
+}
+#TwentyFiveBox{
+    width: 50px;
+    height: 15px;
+    background-color: grey;
+}
+.seventhEightRow{
+    display: flex;
+    justify-content: flex-end;
+}
+.seventhNineRow{
+    display: flex;
+    height: 13%;
+    align-items: center;
+    justify-content: flex-end;
+}
+#TwentySixBox{
+    flex: 0.85;
+    background-color: grey;
+    height: 30px;
+    align-items: center;
+}
+
+#TwentyEightBox{
+    width: 50px;
+    height: 15px;
+    background-color: grey;
+}
+
+.seventhEleRow{
+    display: flex;
+    height: 13%;
+    align-items: center;
+}
+#twentyNineBox{
+    flex: 0.85;
+    background-color: grey;
+    height: 30px;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+}
+.afterContent{
+display: flex;
+justify-content: space-between;
+}
+#thirtyBox{
+    margin-top: 10px;
+    width: 130px;
+    height: 15px;
+    background: lightgray;
+}
+#thirtyOneBox{
+    width: 250px;
+    height: 15px;
+    background: lightgray;
+    margin-top: 10px;
+}
