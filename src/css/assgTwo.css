@@ -13,6 +13,7 @@
     /* border: 1px solid gray; */
     border-left: 1px solid gray;
     border-right: 1px solid gray;
+    overflow: auto;
 }
 
 body{
@@ -31,8 +32,9 @@ body{
     width: 90%;
     display: flex;
     flex-direction: column;
-    height: 30vh;
     justify-content: center; 
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .firstRow{
     
@@ -40,12 +42,14 @@ body{
     padding-bottom: 10px;
 }
 .secondRow{
-    text-align: center;
+    display: flex;
+    justify-content: center;
     padding-bottom: 10px;
 }
 #messageText{
     height: 50px;
     width: 75%;
+    padding: 5px;
 }
 .sendMsg{
     width: 63%;
@@ -78,7 +82,7 @@ body{
     background-color:whitesmoke;
     padding-left: 10px;
     padding-right: 10px;
-    height: 42vh;
+    /* overflow: auto; */
 }
 
 #viewConve{
@@ -101,6 +105,7 @@ body{
     font-size: 12px;
     width: 110px;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 a{
@@ -114,17 +119,43 @@ a{
     align-items: center;
 }
 
+.displayMessage{
+    width: fit-content;
+    background-color: lightgrey;
+    margin-bottom: 10px;
+    padding: 7px;
+    flex-wrap: wrap;
+    overflow-wrap: anywhere;
+}
+
+.receiverMessage{
+    width: fit-content;
+    background-color: lightgrey;
+    margin-bottom: 10px;
+    padding: 7px;
+    flex-wrap: wrap;
+    overflow-wrap: anywhere; 
+}
+
+#recevierDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 .loadMessage{
     display: flex;
     justify-content: center;
-    height: 10vh;
+    /* height: 10vh; */
     align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .btnLoad{
     width: 50%;
     display: flex;
-    height: 10vh;
+    height: 50px;
     background-color: lightgray;
     justify-content: center;
     align-items: center;
@@ -141,9 +172,10 @@ a{
     align-items: center;
 }
 
-#toText{
-    width: 200px;
-    padding: 5px;
+#totext{
+    width: 170px;
+    padding: 5px 10px;
+    height: 20px;
 }
 
 #phone{
@@ -158,9 +190,76 @@ a{
     background: gray;
     color: black;
     border: none;
+    cursor: pointer;
 }
 
 #loadBtn{
     border: none;
     background: grey;
+}
+
+.messageView{
+    background-color: lightgray;
+}
+
+@media screen and (max-width:768px){
+    .content{
+        width:auto;
+        overflow: auto;
+    }
+    .firstRow{
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        text-align: left;
+        padding-top: 10px;
+    }
+
+    .secondRow{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .sendMsg{
+        padding-left: 20px;
+        text-align: left;
+    }
+    .card{
+        height: auto;
+    }
+
+    .messageList{
+        flex-direction: column;
+    }
+    .recent{
+        width: 150px;
+    margin-bottom: 10px;
+    }
+    #btnAllConv{
+        width: 150px;
+        margin-bottom: 10px;
+    }
+    #btnPhotos{
+        width: 150px;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+    #password{
+        justify-content: flex-start;
+    }
+
+    #btnChangePass{
+        width: 150px;
+    font-size: 12px;
+    }
+    .messageContent{
+        height: auto;
+    }
+    #newTextMsg{
+        margin-bottom: 10px;
+        width: auto;
+    }
 }
