@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="../css/assgTwo.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -18,12 +19,13 @@
           <div class="card">
             <div class="firstRow">
               <label for="to">To:</label>
-              <select name="" id="toText">
-                </select>
+              <input type="text" id="totext">
+              <!-- <select name="" id="toText">
+                </select> -->
                 <label for="" id="phone">Phone number or name</label>
             </div>
             <div class="secondRow">
-              <label for="message">Message:</label>
+              <label for="message">Message: </label>
               <input type="text" id="messageText" />
             </div>
             <div class="sendMsg">
@@ -36,7 +38,7 @@
           <a href=""><button id="btnAllConv">All Conversation</button></a>
           <a href=""><button id="btnPhotos">Photos</button></a>
           <div id="password">
-            <a href=""><button>Change PassWord</button></a>
+            <a href=""><button id="btnChangePass">Change PassWord</button></a>
           </div>
         </div>
         <div class="messageContent">
@@ -55,18 +57,20 @@
               <a href="">Click here to view</a></label
             >
           </div>
-          <div class="messageView">
-            <div>
-
+          <div>
+            <div id="details">
             </div>
+            <div id="recevierDetails"></div>
           </div>
-          <div class="loadMessage">
-            <div class="btnLoad">
-                <a href="">Load More Messages</a>
-            </div>
-          </div>
+          
         </div>
+        <div class="loadMessage">
+                <div class="btnLoad">
+                    <a href="">Load More Messages</a>
+                </div>
+              </div>
       </div>
     </div>
+    <script type="module" src="../components/assignment.js"></script>
   </body>
 </html>
