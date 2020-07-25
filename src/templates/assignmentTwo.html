@@ -12,55 +12,66 @@
     <div class="wrapper">
       <div class="content">
           <div class="heading">
-                <label for=""> <b> Textify</b> Because Text Message Rocks</label>
+                <label for="" id="heading"></label>
                 <a href="">Logout</a>
           </div> 
+          <div id="headingId"></div>
+          <div id="what"></div>
         <div class="cardContainer">
           <div class="card">
             <div class="firstRow">
               <label for="to">To:</label>
-              <input type="text" id="totext">
-              <!-- <select name="" id="toText">
-                </select> -->
-                <label for="" id="phone">Phone number or name</label>
+              <select name="" id="toText">
+                </select>
+                <label for="" id="phone"></label>
             </div>
             <div class="secondRow">
               <label for="message">Message: </label>
               <input type="text" id="messageText" />
             </div>
+            <div id="attach"></div>
             <div class="sendMsg">
-              <button class="btnSend">Send Text Message</button>
+              <button class="btnSend" id="btnSend"></button>
             </div>
           </div>
         </div>
         <div class="messageList">
-          <button class="recent">Recent Conversation</button>
-          <a href=""><button id="btnAllConv">All Conversation</button></a>
-          <a href=""><button id="btnPhotos">Photos</button></a>
-          <div id="password">
-            <a href=""><button id="btnChangePass">Change PassWord</button></a>
-          </div>
+          <ul class="tabrow">
+              <li class="selected">Recent Conversation</li>
+              <li>All Conversation</li>
+              <li >Photos</li>
+            </ul>
         </div>
         <div class="messageContent">
           <div id="viewConve">
-            <a href="">View All Conversation</a>
+            <a href=""></a>
           </div>
           <div class="messageBox">
-            <label for="newMessage">New Text Message :</label><br />
+            <div id="newTextMsgH"><label for="newMessage" id="newText"></label></div>
             <input type="text" id="newTextMsg" />
-            <button id="btnsendMsg">Send Message</button><br />
-            <a href="">Attach a photo or schedule later for delivery</a>
+            <button id="btnsendMsg"></button><br />
+            <div id="newAttach"><a href="" ></a></div>
           </div>
-          <div class="laterMsg">
+          <div class="laterMsg"  >
             <label for="laterMsg"
-              >You have <b> 1 message schedule</b> for later delivery
+            id="laterDelivery"  
+            >
               <a href="">Click here to view</a></label
             >
           </div>
           <div>
-            <div id="details">
-            </div>
-            <div id="recevierDetails"></div>
+            <div id="idDisplay"></div>
+            <div id="firstMsg"></div>
+            <div id="right"></div>
+            <div id="rightDisplay">
+            <div id="secondMsg"></div>
+          </div>
+            <div id="idNew"></div>
+            <div id="newYest"></div>
+            <div id="idNewRight"></div>
+            <div id="rightDisplay">
+            <div id="newYestRight"></div>
+          </div>
           </div>
           
         </div>
