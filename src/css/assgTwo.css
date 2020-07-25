@@ -1,6 +1,6 @@
 .wrapper{
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     justify-content: center;
 }
@@ -71,7 +71,47 @@ body{
     font-size: 12px;
     width: 180px;
     margin-right: 10px;
+    -webkit-border-top-left-radius: 15px;
+    -webkit-border-top-right-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    -moz-border-radius-topright: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
+
+.recent::before{
+    position: absolute;
+    bottom: 0;
+}
+
+.recent::before{
+z-index: 1;
+background: whitesmoke;
+}
+.recent::before, .recent::after{
+    content: "";
+    background: #ddc385;
+    width: 10px;
+    height: 10px;
+}
+.recent::before{
+    left: -10px;
+}
+.recent::after{
+    right: -10px;
+}
+
+.recent::after,.recent::before{
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius: 10px;
+    background: #222;
+    z-index: 2;
+
+}
+
 #btnAllConv{
     width: 110px;
     margin-right: 10px;
@@ -91,6 +131,7 @@ body{
     height: 8vh;
     align-items: center;
     font-size: 18px;
+    text-decoration: underline;
 }
 
 #newTextMsg{
@@ -106,17 +147,28 @@ body{
     width: 110px;
     margin-left: 10px;
     cursor: pointer;
+    text-decoration: underline
+}
+
+#again{
+    line-height: 10px;
 }
 
 a{
     color: black;
 }
+#head{
+    color: gray;
+}
 
 .laterMsg{
     display: flex;
     justify-content: center;
-    height: 9vh;
+    height: 5vh;
     align-items: center;
+    background: lightgray;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .displayMessage{
@@ -170,10 +222,12 @@ a{
     padding-right: 10px;
     height: 7vh;
     align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-#totext{
-    width: 170px;
+#toText{
+    width: 199px;
     padding: 5px 10px;
     height: 20px;
 }
@@ -201,6 +255,229 @@ a{
 .messageView{
     background-color: lightgray;
 }
+
+.tabs li{
+    float: left;
+    position: relative;
+    text-decoration: none;
+}
+
+.tabs a{
+    float: left;
+    padding: 5px 5px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+    background: whitesmoke;
+    -webkit-border-top-left-radius: 15px;
+    -webkit-border-top-right-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    -moz-border-radius-topright: 15px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+
+#attach{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    padding-bottom: 10px;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+#firstMsg{
+    font-size: 0.8em;
+    padding: 10px;
+    background: lightgray;
+    width: fit-content;
+}
+
+#right{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.8em;
+    padding-bottom: 5px;
+}
+
+#secondMsg{
+    font-size: 0.8em;
+    padding: 10px;
+    background: lightgray;
+    width: fit-content;
+}
+
+#rightDisplay{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#idNew{
+    font-size: 0.8em;
+    padding-bottom: 5px;
+}
+
+#newYest{
+    font-size: 0.8em;
+    padding: 10px;
+    background: lightgray;
+    width: fit-content;
+}
+
+#idNewRight{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.8em;
+    padding-bottom: 5px;
+}
+
+#newYestRight{
+    font-size: 0.8em;
+    padding: 10px;
+    background: lightgray;
+    width: fit-content;
+}
+
+#idDisplay{
+    font-size: 0.8em;
+    padding-bottom: 5px;
+}
+
+#today{
+color: gray;
+padding-left: 5px;
+}
+
+#headingId{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+#what{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#newAttach{
+    padding-top: 10px;
+    text-decoration: underline;
+}
+
+
+.tabrow {
+    text-align: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+  }
+  .tabrow li {
+    margin: 0 10px;
+    padding: 0 10px;
+    border: 1px solid #AAA;
+    background: #ECECEC;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .tabrow li.selected {
+    background: #FFF;
+    color: #000;
+  }
+
+  .tabrow {
+    position: relative;
+  }
+  .tabrow:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #AAA;
+    z-index: 1;
+  }
+
+  .tabrow:before {
+    z-index: 1;
+  }
+  .tabrow li {
+      position: relative;
+    z-index: 0;
+  }
+  .tabrow li.selected {
+    z-index: 2;
+    border-bottom-color: #FFF;
+  }
+
+  .tabrow li:before,
+.tabrow li:after {
+  position: absolute;
+  bottom: -1px;
+  width: 6px;
+  height: 6px;
+  content: " ";
+}
+.tabrow li:before {
+  left: -6px;
+}
+.tabrow li:after {
+  right: -6px;
+}
+.tabrow li:after, .tabrow li:before {
+  border: 1px solid #AAA;
+}
+
+.tabrow li {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+  .tabrow li:before {
+    border-bottom-right-radius: 6px;
+    border-width: 0 1px 1px 0;
+  }
+  .tabrow li:after {
+    border-bottom-left-radius: 6px;
+    border-width: 0 0 1px 1px;
+  }
+
+  .tabrow li:before {
+    box-shadow: 2px 2px 0 red;
+  }
+  .tabrow li:after {
+    box-shadow: -2px 2px 0 red;
+  }
+
+  .tabrow li:before {
+    box-shadow: 2px 2px 0 #ECECEC;
+  }
+  .tabrow li:after {
+    box-shadow: -2px 2px 0 #ECECEC;
+  }
+  .tabrow li.selected:before {
+    box-shadow: 2px 2px 0 #FFF;
+  }
+  .tabrow li.selected:after {
+    box-shadow: -2px 2px 0 #FFF;
+  }
+
+  .tabrow li {
+    background: linear-gradient(to bottom, #ECECEC 50%, #D1D1D1 100%);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4), inset 0 1px 0 #FFF;
+    text-shadow: 0 1px #FFF;
+    margin: 0 -5px;
+    padding: 0 20px;
+    margin-right: 10px;
+  }
+
+  #newTextMsgH{
+      padding-bottom: 10px;
+  }
 
 @media screen and (max-width:768px){
     .content{
