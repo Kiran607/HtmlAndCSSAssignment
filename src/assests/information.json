@@ -1,0 +1,12 @@
+{
+    "info": [
+      {
+        "number":"(212) 555-1234",
+        "numberBelow":"what is this number?",
+        "attach":"attach a photo to text message",
+        "later":"or send later delivery",
+        "numberTwo":"(508) 555-1234 set a name for this number",
+        "laterAgain":"Attach a photo or schedule it for later delivery"
+      }
+    ]
+}

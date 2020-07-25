@@ -1,0 +1,35 @@
+{
+  "message": [
+    {
+      "id": 1,
+      "to": "kiran",
+      "message": "hi"
+    },
+    {
+      "id": 2,
+      "to": "hello",
+      "message": "how are you"
+    },
+    {
+      "to": "",
+      "message": "hii",
+      "id": 3
+    }
+  ],
+  "receiver": [
+    {
+      "id": 1,
+      "to": "kiran",
+      "message": "hi"
+    },
+    {
+      "id": 2,
+      "to": "kiran",
+      "message": "hi"
+    },
+    {
+      "message": "k",
+      "id": 3
+    }
+  ]
+}
